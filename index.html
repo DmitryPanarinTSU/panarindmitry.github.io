@@ -1,0 +1,150 @@
+<html><head>
+	<title>Классическая механика</title>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1251">
+	<link href="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/main.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/sod1.js"></script>
+</head>
+<body>
+
+<table class="main">
+	<tbody><tr>
+		<td colspan="2">
+
+                        <table width="100%" height="20" cellspacing="0" cellpadding="0" border="0">
+                        	<tbody><tr>
+                             		<td rowspan="2" width="120" height="65"><a href="https://ido.tsu.ru/tsu_res/res37/index.html"><img src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/n5.png" style="border:none;"></a></td>
+                        		<td height="100%"><span class="zag1">Классическая механика</span>
+                        	</td></tr>
+                        	<tr>
+                        	    <td><span class="zag2" id="subtitle">Основные определения и математические конструкции классической механики</span><br></td>
+                        	</tr>
+                        </tbody></table>
+		</td>
+	</tr>
+	<tr>
+		<td class="h100 menutd">
+			<iframe id="menu" name="menu" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/menu.htm"></iframe>
+		</td>
+		<td class="h100 maintd">
+			<iframe id="mainwindow" name="mainwindow" src="" onload="document.getElementById('subtitle').innerHTML=window.frames['mainwindow'].document.title;buttons();"></iframe>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+
+<script language="JavaScript" "="">
+window.frames["mainwindow"].location="text/"+p[0];
+function l() {
+  loc=window.frames["mainwindow"].location;
+  loc=loc.toString();
+  loc=loc.substr(loc.lastIndexOf('/')+1,100);
+  loc=loc.substring(0,loc.lastIndexOf('.html')+5);
+  return loc;
+}
+function g(w) {
+  cur=p2[l()];
+  if ((w=="back")&&(cur>0))
+    window.frames["mainwindow"].location="text/"+p[cur-1];
+  if ((w=="forward")&&(cur<p.length-1))
+    window.frames["mainwindow"].location="text/"+p[cur+1];
+  buttons();
+}
+function buttons() {
+  cur=p2[l()];
+  if (cur>0) {
+    document.getElementById("leftbut2").style.display="none";
+    document.getElementById("leftbut").style.display="inline";
+  } else {
+    document.getElementById("leftbut").style.display="none";
+    document.getElementById("leftbut2").style.display="inline";
+  }
+  if (cur<p.length-1) {
+    document.getElementById("rightbut2").style.display="none";
+    document.getElementById("rightbut").style.display="inline";
+  } else {
+    document.getElementById("rightbut").style.display="none";
+    document.getElementById("rightbut2").style.display="inline";
+  }
+}
+</script>
+
+			<table width="100%" cellspacing="2" cellpadding="0" border="0">
+				<tbody><tr>
+					<td width="30%" align="left">
+<a href="https://ido.tsu.ru/tsu_res/res37/text/sod.html" target="mainwindow" alt="Содержание"><img alt="Содержание" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/nsod.png" name="b3" onmouseover="b3.src='img/nsod.png'" onmouseout="b3.src='img/nsod.png'" border="0" align="top"></a>
+<a href="https://ido.tsu.ru/tsu_res/res37/text/info.html" target="mainwindow" alt="‘"><img alt="‘" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/info.png" name="b3" onmouseover="b3.src='img/info_1.png'" onmouseout="b3.src='img/info.png'" border="0" align="top"></a>&nbsp;
+					</td>
+
+					<td width="40%" align="center">
+<div id="leftbut" style="display: inline;"><a href="javascript:g('back')" alt="Предыдущая"><img alt="Предыдущая" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/nback.gif" name="b1" onmouseover="b1.src='img/nback.gif'" onmouseout="b1.src='img/nback.gif'" border="0"></a></div>
+<div id="leftbut2" style="display: none;"></div>&nbsp;
+						&nbsp;
+<div id="rightbut" style="display: inline;"><a href="javascript:g('forward')" alt="Следующая"><img alt="Следующая" src="%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%85%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0_files/nforvard.gif" name="b2" onmouseover="b2.src='img/nforvard.gif'" onmouseout="b2.src='img/nforvard.gif'" border="0"></a></div>
+<div id="rightbut2" style="display: none;"></div>
+	
+					</td>
+        				<td width="30%" align="right">
+					</td>
+
+    				</tr>
+			</tbody></table>
+
+		</td>
+	</tr>
+</tbody></table>
+
+
+<script language="JavaScript">
+
+// Определяет номер node в dtree по имени файла
+window.frames["mainwindow"].location="text/"+p[0];
+function file2node(filename) {
+//alert("file2node");
+  found=false;
+  if (p2[filename]) {
+    d=window.frames["menu"].d;
+    // Просматриваем с конца, т.к. глава может иметь такое же название файла как и подраздел
+    // В дереве открыть при этом нужно раздел
+    //for (i=0;i<d.aNodes.length;i++) {
+    for (i=d.aNodes.length-1;i>=0;i--) {
+      if (d.aNodes[i].url==("text/"+get))
+        return d.aNodes[i].id;
+    }
+  }
+  return found;
+}
+//
+function urlopen() {
+//alert("urlopen");
+  get = new String(window.location);
+  x = get.indexOf('?');
+  if (x!=-1) {
+    len = get.length;
+    get = get.substr(x+1,len-x);
+    // Отрезаем остальные get-параметры
+    get=get.replace("%26","&");
+    if (get.indexOf('&')>0) {
+      get=get.substr(0,get.indexOf('&'));
+    }
+    //
+    node=file2node(get);
+    if (node) {
+      // Грузим страничку
+      window.frames["mainwindow"].location="text/"+get;
+      // Открываем дерево до этого узла
+      d.closeAll();
+      pid=d.aNodes[node].pid;
+      while (pid>0) {
+        if (d.aNodes[pid]._io!=true)
+          d.o(pid);
+        pid=d.aNodes[pid].pid;
+      }
+    }
+  }
+}
+</script>
+
+
+
+ </body></html>

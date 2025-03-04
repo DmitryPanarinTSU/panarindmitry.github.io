@@ -1,0 +1,50 @@
+* {
+	margin:0;
+	padding:0;
+}
+html,body {
+	width:100%;
+	height:100%;
+}
+body  {
+	
+	margin-top:0;
+	margin-left:5px;
+	margin-right:5px;
+	font-family: "Arial";
+}
+.menutd {
+	width:24%;
+}
+.maintd {
+	width:86%;
+}
+iframe {
+	height:100%;
+	width:100%;
+}
+.zag1{
+        font-size:22;
+        font-weight:bold;
+}
+.zag2{
+        font-size:14;
+	font-weight:bold;
+}
+table {
+	border-collapse:collapse;
+	border-width:0px;
+}
+td {
+	padding:5px;
+}
+table.main {
+	width:100%;
+	height:100%;
+}
+.h100 {
+	height:100%;
+}
+#leftbut,#leftbut2,#rightbut,#rightbut2 {
+	display:none;	
+}
